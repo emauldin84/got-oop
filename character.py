@@ -12,5 +12,5 @@ class Character():
         self.inventory = []
     
 
-    def greet(self):
-        return "Hello. I am %s. I am awesome." % (self.name,)
+    def greet(self, someone):
+        return "Hello, %s. I am %s. I am awesome." % (someone.name, self.name,)
