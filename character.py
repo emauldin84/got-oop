@@ -31,5 +31,13 @@ class Character():
 class Hero(Character):
     pass
 
+# `Monster` is a kind of `Character`
+# `Monster` is a subclass of `Character`
+# `Monster` inherits from `Character`
+# `Character` is the super class of `Monster`
 class Monster(Character):
-    pass
+    def monster_greet(self, someone=None):
+        if someone:
+            return "Grrrrr! I am %s. I will smash you, %s!" % (self.name, someone.name,)
+        else:
+            return "Grrrrr! I am %s." % (someone.name)

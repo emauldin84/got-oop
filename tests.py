@@ -44,3 +44,5 @@ night_king = Monster("Night King", "night_king.png")
 # Monster should be able to .greet a Character
 print(bronn.greet(night_king))
 print(night_king.greet(arya))
+
+print(night_king.monster_greet(jon))
