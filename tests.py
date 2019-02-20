@@ -33,10 +33,14 @@ print(arya.greet())
 # I should be able to create a `Hero` instance
 bronn = Hero("Bronn of the Blackwater", "bron.png")
 
-# Hero should be able to .greet Character
+# Hero should be able to .greet a Character
 print(bronn.greet(arya))
 print(jon.greet(bronn))
 
 
 # I should be able to create  `Monster` instance
-night_king = Monster("night King", "night_king.png")
+night_king = Monster("Night King", "night_king.png")
+
+# Monster should be able to .greet a Character
+print(bronn.greet(night_king))
+print(night_king.greet(arya))
