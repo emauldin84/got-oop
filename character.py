@@ -11,8 +11,8 @@ class Character():
         self.avatar = new_avatar
         self.inventory = []
     
-# `someone=None` is a default argument
-# `None` is equal to `null` in other languages
+    # `someone=None` is a default argument
+    # `None` is equal to `null` in other languages
     def greet(self, someone=None):
         # When we assume that `someone` argument has a `.name` property
         # this is an Object-Oriented programming principle called 
@@ -22,3 +22,11 @@ class Character():
             return "Hello, %s. I am %s. I am awesome." % (someone.name, self.name,)
         else:
             return "Hello. I am %s. I am awesome." % (self.name,)
+
+
+# `Hero` is a kind of `Character`
+# `Hero` is a subclass of `Character`
+# `Hero` inherits from `Character`
+# `Character` is the super class of `Hero`
+class Hero(Character):
+    pass
