@@ -46,3 +46,7 @@ print(bronn.greet(night_king))
 print(night_king.greet(arya))
 
 print(night_king.monster_greet(jon))
+
+# Expect Jon to say "EEEEEEEEEK!"
+# when encountering a monster
+print(bronn.greet(night_king))
